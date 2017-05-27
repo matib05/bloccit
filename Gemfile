@@ -30,3 +30,5 @@
  gem 'turbolinks'
  # Use Bootstrap for css
  gem 'bootstrap-sass'
+ # Use Pry
+ gem 'pry-rails', :group => :development
