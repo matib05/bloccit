@@ -16,6 +16,12 @@ posts = Post.all
     ) 
 end
 
+p = Post.find_or_create_by!(title: "New Title", body: "New Body for new title")
+c = Comment.find_or_create_by!(post: p, body: "New body for new comment for post #{p.title}")
+
+
+puts p.title
+puts c.body
 puts "Seed Finished!"
 puts "#{Post.count} posts created."
 puts "#{Comment.count} comments created."
