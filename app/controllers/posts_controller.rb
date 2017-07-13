@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @topic = Topic.find(params[:id])
+    @topic = Topic.find(params[:topic_id])
     @post = Post.new
   end
   
@@ -13,7 +13,7 @@ class PostsController < ApplicationController
     @post = Post.new
     @post.title = params[:post][:title]
     @post.body = params[:post][:body]
-    @topic = Topic.find(params[:id])
+    @topic = Topic.find(params[:topic_id])
     @post.topic = @topic
     
     if @post.save
