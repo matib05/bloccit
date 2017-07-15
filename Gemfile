@@ -33,3 +33,5 @@
  gem 'bootstrap-sass'
  # Use Pry
  gem 'pry-rails', :group => :development
+ # Gem for encrypting user passwords
+ gem 'bcrypt'
