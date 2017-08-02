@@ -1,3 +1,4 @@
 allignment of the welcome page - I think it might be some css issue
 the remember me button - I'm not sure how to fix that
 how does rails read this? what is the engine behind all of this naming convetions. It can even convert broker plurals (person => people)
+heroku run rake db:migrate didn't work for me
